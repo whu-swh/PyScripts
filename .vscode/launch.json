@@ -1,0 +1,33 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Debug AnalysisCodeSizeLog.py",
+            "type": "python",
+            "request": "launch",
+            "program": "AnalysisCodeSizeLog.py",
+            "console": "integratedTerminal",
+            "args": [
+                "-csv",
+                "./test_data/508.namd_r.abstractor.txt"
+            ],
+        },
+        {
+            "name": "Debug CompareSec.py",
+            "type": "python",
+            "request": "launch",
+            "program": "CompareSec.py",
+            "console": "integratedTerminal",
+            "args": [
+                "-compare",
+                "/home/kp4/PyScripts/test_data",
+                "tmfKernel.abstractor.o",
+                "tmfKernel.baseline.o"
+            ],
+        }
+    ]
+}
